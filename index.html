@@ -13,12 +13,13 @@
 		h1 { font-size: 2em; }
 		button, .small { font-size: 0.75em; }
 		a:link, a:visited { color: #0000ff; }
+		#search { font-size: 1em; padding: 0.5em; width: 100%; }
 	</style>
 	<script src="/scripts/ggr.js" defer></script>
 </head>
 <body onload="ggr();">
 	<h1>GooglingGo! Japan</h1>
-	<h2 id="search" style="display: none;">🔍 </h2>
+	<input id="search" type="search" placeholder="検索ワードを入力" />
 	<p>お好みの検索エンジンを選んでください</p>
 	<ul>
 		<li><a href="https://www.google.com/" target="_blank">Google</a></li>
@@ -33,6 +34,5 @@
 		<button onclick="alert('ググれボケ(またはバカ)')">GGRBKとは</button>
 		<a href="family.html" class="small">GGRBK Family</a>
 	</p>
-	<p id="tips" style="display: none;">ヒント: URLの「#」以降にワードを指定することで、各リンクから直接検索するようになります。<a href="#ggrks+とは" target="_blank">例</a></p>
 </body>
 </html>
