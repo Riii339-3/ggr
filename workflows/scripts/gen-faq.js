@@ -57,7 +57,7 @@ files.forEach(file => {
 
     listHtml += `
       <li>
-        <a href="${file.replace('.md', '.html')}">${file.replace('.md', '.html')}</a>
+        <a href="${file.replace('.md', '')}">${file.replace('.md', '')}</a>
         <ul><li>${meta.description}</li></ul>
       </li>
     `;
@@ -71,7 +71,7 @@ listHtml += `
 
   <p>頻繁に発生する質問にはこれらのリンクを貼り付けて撃退しましょう！</p>
 
-  <a href="/family.html" class="small">GGRBK Familyに戻る</a>
+  <a href="/family" class="small">GGRBK Familyに戻る</a>
 </body>
 </html>
 `;

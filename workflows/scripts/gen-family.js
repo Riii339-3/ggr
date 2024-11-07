@@ -46,17 +46,17 @@ const familyTemplate = `\
       LIST_ITEMS_PLACEHOLDER
     </ul>
   </p>
-  <p>ヒント: これらのリンクはすべてindex.htmlにリダイレクトされます。変化するのは埋め込みに表示されるメッセージのみです。</p>
+  <p>ヒント: これらのリンクはすべて/にリダイレクトされます。変化するのは埋め込みに表示されるメッセージのみです。</p>
 
   <h3>GGRBK FAQ</h3>
-  <p>頻繁に登場する質問にうんざりしたあなたへ。<br><a href="/faq/list.html">FAQ一覧</a></p>
+  <p>頻繁に登場する質問にうんざりしたあなたへ。<br><a href="/faq/list">FAQ一覧</a></p>
 </body>
 </html>
 `;
 
 let listItems = `
       <li>
-        <a href="index.html">index.html</a>
+        <a href="/">/</a>
         <ul><li>自分で調べることはとても重要です。人に聞く前に一度検索してみやがれください。</li></ul>
       </li>
 `;
@@ -64,7 +64,7 @@ let listItems = `
 Object.entries(familyData).forEach(([key, value]) => {
   listItems += `
       <li>
-        <a href="${key}.html">${key}.html</a>
+        <a href="${key}">${key}</a>
         <ul><li>${value}</li></ul>
       </li>
   `;
