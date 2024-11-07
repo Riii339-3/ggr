@@ -17,7 +17,7 @@ const ggr = () => {
     urls[engine] = query + encodedHash;
   });
   const search = document.getElementById("search");
-  search.innerHTML += decodeURI(hash.replace("+", " "));
+  search.innerHTML += decodeURI(hash.replace("+", " ")).replaceAll("<", "&lt;").replaceAll(">", "&gt;");
   search.style.display = "unset";
   Array.from(document.body.querySelectorAll("li > a")).forEach((element) => {
     const href = element.attributes.getNamedItem("href");
