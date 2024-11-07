@@ -1,5 +1,8 @@
 # ggrbk.github.io
 
-https://ggrbk.github.io/
+次世代型検索ツール
 
-https://ggrbk.github.io/family.html
+メインページ: https://ggrbk.github.io/
+
+おまけ: https://ggrbk.github.io/family
+
